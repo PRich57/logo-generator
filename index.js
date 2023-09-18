@@ -7,12 +7,12 @@ const questions = [
   {
     type: 'input',
     message: `Enter up to 3 characters to be displayed in the logo.`,
-    name: 'characters',
+    name: 'text',
   },
   {
     type: 'input',
     message: 'Enter your desired text color by color name or hexadecimal number',
-    name: 'text-color',
+    name: 'textColor',
   },
   {
     type: 'list',
@@ -23,14 +23,14 @@ const questions = [
   {
     type: 'input',
     message: 'Enter your desired shape color by color name or hexadecimal number',
-    name: 'shape-color',
+    name: 'shapeColor',
   }
 ];
 
 // Create a function to render SVG
-function renderSVG(filename, data){
-  const myLogo = generateLogo(data)
-  fs.writeFile(filename, myLogo, (err) => {
+function renderSVG(filename, {text, textColor, shapeColor, shape}){
+  const myLogo = new generateLogo[shape](textColor, shapeColor, text)
+  fs.writeFile(filename, myLogo.render(), (err) => {
     err ? console.error(err) : console.log(`Generated logo.svg`)
   })
 }
@@ -38,7 +38,7 @@ function renderSVG(filename, data){
 // Create a function to initialize app
 function init(){
   inquirer
-    .createPromptModule(questions)
+    .prompt(questions)
     .then((data) => {
       renderSVG('logo.svg', data)
     })
