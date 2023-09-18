@@ -37,7 +37,9 @@
   
 ## Tests
 
-  ENTER EXAMPLES OF HOW TO RUN TESTS HERE.
+  This project contains a shapes.test.js file that tests for proper rendering of each shape. The tests confirm that each shape correctly takes input and produces a match to the template created in the examples directory.
+
+  To run these tests, first make sure you're in the logo-generator directory, then use the command "npm run test" in the terminal. You will see output of the completed successful test for each shape.
 
 ## Questions
 
@@ -49,4 +51,4 @@
 
 ## Credits
 
-  This README was created using my README Generator command-line application, which can also be found in my GitHub repositories.
+  This README was created using my README Generator application, which can also be found in my GitHub repositories.
