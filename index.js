@@ -11,7 +11,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Enter your desired text color by color name: or hexadecimal number',
+    message: 'Enter your desired text color by color name or hexadecimal number:',
     name: 'textColor',
   },
   {
@@ -22,7 +22,7 @@ const questions = [
   },
   {
     type: 'input',
-    message: 'Enter your desired shape color by color name: or hexadecimal number',
+    message: 'Enter your desired shape color by color name or hexadecimal number:',
     name: 'shapeColor',
   }
 ];
