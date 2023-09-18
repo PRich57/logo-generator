@@ -6,23 +6,23 @@ const generateLogo = require("./lib/shapes");
 const questions = [
   {
     type: 'input',
-    message: `Enter up to 3 characters to be displayed in the logo.`,
+    message: `Enter up to 3 characters to be displayed in the logo:`,
     name: 'text',
   },
   {
     type: 'input',
-    message: 'Enter your desired text color by color name or hexadecimal number',
+    message: 'Enter your desired text color by color name: or hexadecimal number',
     name: 'textColor',
   },
   {
     type: 'list',
-    message: 'Choose your desired shape',
+    message: 'Choose your desired shape:',
     choices: ['Circle', 'Triangle', 'Square'],
     name: 'shape',
   },
   {
     type: 'input',
-    message: 'Enter your desired shape color by color name or hexadecimal number',
+    message: 'Enter your desired shape color by color name: or hexadecimal number',
     name: 'shapeColor',
   }
 ];
