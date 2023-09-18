@@ -17,6 +17,7 @@
   - [Contributing](#contributing)
   - [Tests](#tests)
   - [Questions](#questions)
+  - [Credits](#credits)
 
 ## Installation
   
