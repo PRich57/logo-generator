@@ -29,7 +29,9 @@ const questions = [
 
 // Create a function to render SVG
 function renderSVG(filename, {text, textColor, shapeColor, shape}){
+  // Create a variable called myLogo and set it equal to the value of a new object created from selected shape and its properties
   const myLogo = new generateLogo[shape](textColor, shapeColor, text)
+  // Use fs to write new file containing rendered SVG
   fs.writeFile(filename, myLogo.render(), (err) => {
     err ? console.error(err) : console.log(`Generated logo.svg`)
   })
@@ -37,6 +39,7 @@ function renderSVG(filename, {text, textColor, shapeColor, shape}){
 
 // Create a function to initialize app
 function init(){
+  // Use inquirer to prompt questions array and collect user input
   inquirer
     .prompt(questions)
     .then((data) => {
