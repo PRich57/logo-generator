@@ -1,6 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const generateLogo = require("./lib/shapes");
+const shapes = require("./lib/shapes");
 
 // Create an array of questions for user input
 const questions = [
@@ -30,7 +30,7 @@ const questions = [
 // Create a function to render SVG
 function renderSVG(filename, {text, textColor, shapeColor, shape}){
   // Create a variable called myLogo and set it equal to the value of a new object created from selected shape and its properties
-  const myLogo = new generateLogo[shape](textColor, shapeColor, text)
+  const myLogo = new shapes[shape](textColor, shapeColor, text)
   // Use fs to write new file containing rendered SVG
   fs.writeFile(filename, myLogo.render(), (err) => {
     err ? console.error(err) : console.log(`Generated logo.svg`)
