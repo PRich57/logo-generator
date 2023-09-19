@@ -7,7 +7,8 @@
   - This project solves the problem of spending money or time for logo generation
   - This project helped me get a better grasp on using inquirer as well as unit testing and class inheritance
   - In the future I will add additional shapes to give access to more creative designs
-  - ADD LINK TO VIDEO DEMONSTRATION HERE
+  
+  To watch a video demonstration click [here!](https://drive.google.com/file/d/1leZokUbTpudmx9J6CHQQjtnLVRfMw-f-/view?usp=sharing)
 
 ## Table of Contents
 

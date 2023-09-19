@@ -43,6 +43,7 @@ function init(){
   inquirer
     .prompt(questions)
     .then((data) => {
+      // Validation - don't accept more than 3 characters
       if(data.text.length > 3) {
         return console.error("Incorrect Usage: You may enter a maximum of 3 characters for your logo. Please try again.");
       }
