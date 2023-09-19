@@ -1,4 +1,4 @@
- <svg width='300' height='200'>
+<svg width='300' height='200'>
   <polygon points="150, 18 244, 182 56, 182" fill="blue" />
-  <text x="148" y="157" font-size="60" text-anchor="middle" fill="white">SVG</text>
- </svg>
+  <text x="148" y="165" font-size="60" text-anchor="middle" fill="white">SVG</text>
+</svg>
