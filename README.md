@@ -34,7 +34,7 @@
 
 ## Contributing
 
-  If anyone would like to contribute to the project they should clone this repository to their local machine and create a new branch. All changes should be submitted via pull requests on GitHub to await approval.
+  If anyone would like to contribute to the project they should clone this repository and create a new branch. All changes should be submitted via pull requests on GitHub to await approval.
   
 ## Tests
 
